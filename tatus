@@ -1,0 +1,22 @@
+[1mdiff --git a/docs-site/developers/windows.mdx b/docs-site/developers/windows.mdx[m
+[1mindex 50d1016a2..27e494706 100644[m
+[1m--- a/docs-site/developers/windows.mdx[m
+[1m+++ b/docs-site/developers/windows.mdx[m
+[36m@@ -68,8 +68,15 @@[m [mpacman -S git rsync[m
+ ## Choose a good source code location[m
+ [m
+ Anki's source files do not need to be in a specific location, but it's best to[m
+[31m-avoid long paths, as they can cause problems. Spaces in the path may cause[m
+[31m-problems.[m
+[32m+[m[32mavoid long paths, as they can cause problems. The path must not contain spaces, or the build will fail.[m
+[32m+[m
+[32m+[m[32m> [!NOTE][m
+[32m+[m[32m> On some Windows 11 systems, Smart App Control may block the files created[m
+[32m+[m[32m> during the build. Symptoms include security pop-ups and a build error[m
+[32m+[m[32m> mentioning `os error 4551`. You can check its status under[m
+[32m+[m[32m> Windows Security > App & browser control. If you change this setting,[m
+[32m+[m[32m> keep Microsoft Defender enabled.[m
+[32m+[m
+ [m
+ ## More[m
+ [m
